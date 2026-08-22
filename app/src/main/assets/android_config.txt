@@ -1,0 +1,39 @@
+
+// ========================================
+// ANDROID CONFIGURATION - CONTEXT-AWARE DETECTOR
+// ========================================
+
+// Sample rate
+private const val SAMPLE_RATE = 16000
+
+// Context window (preceding audio)
+private const val CONTEXT_WINDOW_SEC = 1.2f
+private const val CONTEXT_WINDOW_SAMPLES = 19200
+private const val CONTEXT_N_FFT = 512
+private const val CONTEXT_HOP = 320
+private const val CONTEXT_N_MELS = 32
+private const val CONTEXT_N_FRAMES = 59
+
+// Current window (target word)
+private const val CURRENT_WINDOW_SEC = 0.4f
+private const val CURRENT_WINDOW_SAMPLES = 6400
+private const val CURRENT_N_FFT = 512
+private const val CURRENT_HOP = 160
+private const val CURRENT_N_MELS = 40
+private const val CURRENT_N_FRAMES = 37
+
+// Total buffer
+private const val TOTAL_BUFFER_SEC = 1.6f
+private const val TOTAL_BUFFER_SAMPLES = 25600
+
+// Detection thresholds
+private const val THRESHOLD = 0.55f
+private const val HIGH_CONFIDENCE = 0.75f
+
+// Normalization (from training)
+private const val CTX_MIN = -80.0f
+private const val CTX_MAX = 0.0f
+private const val CUR_MIN = -80.0f
+private const val CUR_MAX = 0.0f
+
+// Model file: profanity_context_detector.tflite
